@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="text/css" href="data:.">
+	<title>LOCATION DES APPARTEMENT</title>
+	<link rel="stylesheet" type="text/css" href="asset/css/style.css">
+</head>
+<body>
+	<div>
+		<header>
+			<h1>LOCATION DES APPARTEMENT</h1>
+		</header>
+		<main>
+			<aside>
+				<table class="table-bordered ">
+				</table>
+				<ul>
+					<li>
+						<a href="#" onclick="getData('villes',['name'])">Ville</a>
+					</li>
+					<li >
+						<a href="#" onclick="getData('appartements',['name','ville_id'])">Appartement</a>
+					</li>
+					<li >
+						<a href="#" onclick="getData('semaines',['numero'])">Semaine</a>
+					</li>
+				</ul>
+			</aside>
+			<article>
+				<form>
+				 <input id="name_ville" placeholder="Entrer le nom de la ville">
+				 <button id="saveVille">Ajouter</button>
+				</form>
+				<div id="content">
+				</div>
+			</article>
+		</main>
+	</div>
+	<script type="text/javascript" src="asset/js/jquery-3.6.0.min.js">
+	</script>
+	<script type="text/javascript" src="asset/js/script.js"></script>
+	<script type="text/javascript" src="asset/js/openapi.js"></script>
+</body>
+</html>

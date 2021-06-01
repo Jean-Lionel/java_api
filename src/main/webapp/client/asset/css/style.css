@@ -1,0 +1,39 @@
+body{
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	background: aqua;
+	
+}
+
+.content{
+	width: 80%;
+}
+ul li{
+	display: inline-block;
+	padding: 0 10px 0 10px;
+}
+
+ul li a{
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 1.5rem;
+}
+h2{
+	text-align: center;
+}
+
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table, tr,td{
+	border: 1px solid black;
+}
+
+label, input{
+	display: inline-block;
+	width: 800px;
+	
+}

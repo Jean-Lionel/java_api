@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>RESERVATION</title>
+	<link rel="icon" type="text/css" href="data:.">
+	<title>LOCATION DES APPARTEMENT</title>
+	<link rel="stylesheet" href="asset/fontawesome/css/all.css">
+	<link rel="stylesheet" href="asset/css/style.css">
+	<script type="text/javascript" src="asset/js/jquery-3.6.0.min.js" defer="defer">
+	</script>
+</head>
+<body>
+
+	<div class="content">
+		<header>
+			<ul>
+				<li>
+					<a href="ville.html">
+						<i class="fas fa-city"></i> ville
+				   </a>
+				</li>
+				<li>
+					<a href="appartement.html">
+						<i class="fas fa-home"></i> Appartement
+				   </a>
+				</li>
+				<li>
+					<a href="apartement_liste.html">
+						<i class="fas fa-home"></i> Description des appartements
+				   </a>
+				</li>
+				<li>
+					<a href="reservation.html">
+						<i class="fas fa-ticket-alt"></i> Réservation
+				   </a>
+				</li>
+			</ul>
+			<style>
+				label, input, button,select{
+					display: inline-block;
+					width: 400px;
+					padding: 5px;
+					margin: 5px;
+				}
+				.btn{
+					margin-left: 439px;
+				}
+				button{
+					cursor: pointer;
+				}
+
+			</style>
+		</header>
+		<section>
+			<h2>Appartements</h2>
+
+			<div class="formulaire_reservation">
+				<h3>Formulaire de réservation</h3>
+				<form action="#">
+					<div class="form-group">
+						<label for="nom_client"> &#x1f313; NOM ET PRENOM DU CLIENT</label>
+						<input type="text" id="nom_client">
+					</div>
+					<div class="form-group">
+						<label for="telephone"> &#x260e; :  TELEPHONE</label>
+						<input type="text" id="telephone">
+					</div>
+
+					<div class="form-group">
+						<label for="appartement_id"> &#x1f3e0; APPARTEMENT</label>
+						<select id="appartement_id">
+							<option></option>
+						</select>
+					</div>
+					
+
+					<div class="form-group">
+						<label for="semaine_du"> &#x1f4c5; SEMAINE</label>
+						<input type="number" id="semaine_du" placeholder="Entre une Semaine de 1 à 50 "> 
+					</div>
+
+					<div class="form-group">
+						<label for="nombre_semaine"> &#x1f522; NOMBRE DE SEMAINE</label>
+						<input type="number" id="nombre_semaine" placeholder="Entre le nombre de semaine ">
+					</div>
+
+					<div class="form-group btn">
+						<button> &#x1f196; Valider</button>
+					</div>
+				</form>
+			</div>
+
+			<div style="display: flex;justify-content: space-between;">
+				<div id="appartement">
+					
+				</div>
+				<div>
+				<div id="temperature"></div>
+				</div>	
+			</div>
+		</section>
+	</div>
+	
+</body>
+</html>
